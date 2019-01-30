@@ -50,17 +50,17 @@ Future<void> getInfos() async {
 
 ## Examples
 
-Here is [Examples](https://github.com/AweiLoveAndroid/flutter_device_information/tree/master/example). You can find the sample codes and  the screenshot in it.
+The examples here[]().
 
-## More documentations
+## More
 
 For help getting started with the library, view the online
-[documentation](https://pub.dartlang.org/documentation/flutter_device_information/latest/).
+[documentation]().
 
 ## Request issues
 
-Please request bugs at the [issue tracker](https://github.com/AweiLoveAndroid/flutter_device_information/issues).
+Please request bugs at the [issue tracker]().
 
 ## License
 
-More infomation here: [License](https://github.com/AweiLoveAndroid/flutter_device_information/blob/master/LICENSE).
+More infomation about License here[]().
