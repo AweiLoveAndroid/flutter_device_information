@@ -50,7 +50,7 @@ Future<void> getInfos() async {
 
 ## Examples
 
-Here is [Examples](https://github.com/AweiLoveAndroid/flutter_device_information/tree/master/example).
+Here is [Examples](https://github.com/AweiLoveAndroid/flutter_device_information/tree/master/example). You can find the sample codes and  the screenshot in it.
 
 ## More
 
