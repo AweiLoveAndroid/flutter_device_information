@@ -106,5 +106,7 @@ class _MyAppState extends State<MyApp> {
 
 ## Screenshot
 
+![](https://github.com/AweiLoveAndroid/flutter_device_information/blob/master/example/screenshot/screenshot.png?raw=true)
+
 
 
