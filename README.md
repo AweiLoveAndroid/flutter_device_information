@@ -50,7 +50,7 @@ Future<void> getInfos() async {
 
 ## Examples
 
-The examples here[]().
+The examples here[Examples](https://github.com/AweiLoveAndroid/flutter_device_information/tree/master/example).
 
 ## More
 
@@ -59,8 +59,8 @@ For help getting started with the library, view the online
 
 ## Request issues
 
-Please request bugs at the [issue tracker]().
+Please request bugs at the [issue tracker](https://github.com/AweiLoveAndroid/flutter_device_information/issues).
 
 ## License
 
-More infomation about License here[]().
+More infomation about License here[](https://github.com/AweiLoveAndroid/flutter_device_information/blob/master/LICENSE).
