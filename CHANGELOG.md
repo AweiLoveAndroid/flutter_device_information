@@ -1,3 +1,7 @@
+## 0.1.2
+
+* Refix some erors.
+
 ## 0.1.1
 
 * Refix the documentations.
