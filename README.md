@@ -3,6 +3,7 @@
 ## Introduction
 
 A plugin for using Android devices information in Flutter.
+You can use it to get Android release version,Android API version,board name,brand name,model name, cpu ABI etc.
 
 ## Features
 

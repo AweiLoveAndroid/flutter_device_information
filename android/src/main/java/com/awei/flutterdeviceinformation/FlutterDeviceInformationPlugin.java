@@ -18,11 +18,13 @@ public class FlutterDeviceInformationPlugin implements MethodCallHandler {
    */
   public static void registerWith(Registrar registrar) {
     final MethodChannel channel = new MethodChannel(registrar.messenger(), "com.awei.devices/flutter_device_information");
-    // 设置setMethodCallHandler回调 处理Flutter端的调用
+    /// 设置setMethodCallHandler回调 处理Flutter端的调用
     channel.setMethodCallHandler(new FlutterDeviceInformationPlugin());
   }
 
-  // 在这个回调里处理从Flutter来的调用
+  /**
+   * 在这个回调里处理从Flutter来的调用
+   */
   @Override
   public void onMethodCall(MethodCall call, Result result) {
     if (call.method.equals("getPlatformVersion")) {
