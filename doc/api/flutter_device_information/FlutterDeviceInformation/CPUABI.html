@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="API docs for the CPUABI property from the FlutterDeviceInformation class, for the Dart programming language.">
-  <title>CPUABI property - FlutterDeviceInformation class - flutter_device_information library - Dart API</title>
+  <meta name="description" content="API docs for the cpuAbi property from the FlutterDeviceInformation class, for the Dart programming language.">
+  <title>cpuAbi property - FlutterDeviceInformation class - flutter_device_information library - Dart API</title>
   <!-- required because all the links are pseudo-absolute -->
   <base href="../..">
 
@@ -26,9 +26,9 @@
     <li><a href="index.html">flutter_device_information</a></li>
     <li><a href="flutter_device_information/flutter_device_information-library.html">flutter_device_information</a></li>
     <li><a href="flutter_device_information/FlutterDeviceInformation-class.html">FlutterDeviceInformation</a></li>
-    <li class="self-crumb">CPUABI property</li>
+    <li class="self-crumb">cpuAbi property</li>
   </ol>
-  <div class="self-name">CPUABI</div>
+  <div class="self-name">cpuAbi</div>
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
@@ -58,7 +58,7 @@
       <li class="section-title"><a href="flutter_device_information/FlutterDeviceInformation-class.html#static-properties">Static properties</a></li>
       <li><a href="flutter_device_information/FlutterDeviceInformation/board.html">board</a></li>
       <li><a href="flutter_device_information/FlutterDeviceInformation/brand.html">brand</a></li>
-      <li><a href="flutter_device_information/FlutterDeviceInformation/CPUABI.html">CPUABI</a></li>
+      <li><a href="flutter_device_information/FlutterDeviceInformation/cpuAbi.html">cpuAbi</a></li>
       <li><a href="flutter_device_information/FlutterDeviceInformation/model.html">model</a></li>
       <li><a href="flutter_device_information/FlutterDeviceInformation/platformVersion.html">platformVersion</a></li>
       <li><a href="flutter_device_information/FlutterDeviceInformation/sdkInt.html">sdkInt</a></li>
@@ -68,20 +68,24 @@
   </div><!--/.sidebar-offcanvas-->
 
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
-    <h1>CPUABI property</h1>
+    <h1>cpuAbi property</h1>
 
 
         <section id="getter">
         
         <section class="multi-line-signature">
           <span class="returntype">Future<span class="signature">&lt;<wbr><span class="type-parameter">String</span>&gt;</span></span>
-          <span class="name ">CPUABI</span>
+          <span class="name ">cpuAbi</span>
   
 </section>
         
-        <section class="summary source-code" id="source">
+        <section class="desc markdown">
+  <p>获取的是原生平台的设备指令集名称（CPU的类型）。</p>
+<p>return <code>version</code> 原生平台的设备指令集名称（CPU的类型）</p>
+</section>
+<section class="summary source-code" id="source">
   <h2><span>Implementation</span> </h2>
-  <pre class="language-dart"><code class="language-dart">static Future&lt;String&gt; get CPUABI async {
+  <pre class="language-dart"><code class="language-dart">static Future&lt;String&gt; get cpuAbi async {
   final String version = await _channel.invokeMethod(&#39;getCPUABI&#39;);
   return version;
 }</code></pre>
@@ -97,7 +101,7 @@
 
 <footer>
   <span class="no-break">
-    flutter_device_information 0.0.1
+    flutter_device_information 0.1.0
   </span>
 
 </footer>

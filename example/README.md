@@ -6,6 +6,10 @@ Demonstrates how to use the flutter_device_information plugin.
 
 ## Getting Started
 
+For help getting started with Flutter, view the online [Flutter Documentation](https://flutter.io/).
+
+## Sample Codes
+
 ```
 import 'dart:async';
 
@@ -28,7 +32,7 @@ class _MyAppState extends State<MyApp> {
   String _board = 'Unknown';
   String _brand = 'Unknown';
   String _model = 'Unknown';
-  String _CPUABI = 'Unknown';
+  String _cpuAbi = 'Unknown';
 
   @override
   void initState() {
@@ -43,7 +47,7 @@ class _MyAppState extends State<MyApp> {
     String board;
     String brand;
     String model;
-    String CPUABI;
+    String cpuAbi;
 
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
@@ -52,14 +56,14 @@ class _MyAppState extends State<MyApp> {
       board = await FlutterDeviceInformation.board;
       brand = await FlutterDeviceInformation.brand;
       model = await FlutterDeviceInformation.model;
-      CPUABI = await FlutterDeviceInformation.CPUABI;
+      cpuAbi = await FlutterDeviceInformation.cpuAbi;
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
       sdkInt = 'Failed to get sdkInt version.';
       board = 'Failed to get preViewSdkInt version.';
       brand = 'Failed to get platform version.';
       model = 'Failed to get codeName.';
-      CPUABI = 'Failed to get CPUABI.';
+      cpuAbi = 'Failed to get CPUABI.';
     }
 
     // If the widget was removed from the tree while the asynchronous platform
@@ -73,7 +77,7 @@ class _MyAppState extends State<MyApp> {
       _board = board;
       _brand = brand;
       _model = model;
-      _CPUABI = CPUABI;
+      _cpuAbi = cpuAbi;
     });
   }
 
@@ -94,7 +98,7 @@ class _MyAppState extends State<MyApp> {
               Text('${_board}'),
               Text('${_brand}'),
               Text('${_model}'),
-              Text('${_CPUABI}'),
+              Text('${_cpuAbi}'),
             ],
           ),
         ),
@@ -106,7 +110,4 @@ class _MyAppState extends State<MyApp> {
 
 ## Screenshot
 
-![](https://github.com/AweiLoveAndroid/flutter_device_information/blob/master/example/screenshot/screenshot.png?raw=true)
-
-
-
+![截图](https://github.com/AweiLoveAndroid/flutter_device_information/blob/master/example/screenshot/screenshot.png?raw=true)

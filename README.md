@@ -16,7 +16,9 @@ You can use it to get Android release version,Android API version,board name,bra
    * get model name.
    * get CPUABI.
 
-## Get Started
+## Getting Started
+
+For help getting started with Flutter, view the online [Flutter Documentation](https://flutter.io/).
 
 
 #### 1.In your flutter project add the dependency:
@@ -45,7 +47,7 @@ Future<void> getInfos() async {
   String board = await FlutterDeviceInformation.board;
   String brand = await FlutterDeviceInformation.brand;
   String model = await FlutterDeviceInformation.model;
-  String CPUABI = await FlutterDeviceInformation.CPUABI;
+  String cpuABI = await FlutterDeviceInformation.cpuAbi;
 }
 ```
 

@@ -53,6 +53,10 @@
   <div class="col-xs-12 col-sm-9 col-md-8 main-content">
       <h1>FlutterDeviceInformation class </h1>
 
+    <section class="desc markdown">
+      <p><a href="flutter_device_information/FlutterDeviceInformation-class.html">FlutterDeviceInformation</a>通过指定一个<code>MethodChannel</code>，然后调用Android平台的相关API，来获取平台设备相关信息的一个类</p>
+<p><a href="flutter_device_information/FlutterDeviceInformation-class.html">FlutterDeviceInformation</a>这个类里面：定义了一个MethodChannel名称为 "com.awei.devices/flutter_device_information"，用于和原生平台通信。</p>
+    </section>
     
 
     <section class="summary offset-anchor" id="constructors">
@@ -139,7 +143,7 @@
           <span class="signature">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">String</span>&gt;</span></span> 
         </dt>
         <dd>
-          
+          获取的是原生平台的主板型号。 <a href="flutter_device_information/FlutterDeviceInformation/board.html">[...]</a>
           <div class="features">read-only</div>
 </dd>
         <dt id="brand" class="property">
@@ -147,15 +151,15 @@
           <span class="signature">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">String</span>&gt;</span></span> 
         </dt>
         <dd>
-          
+          获取的是原生平台的产品品牌（or系统制造商）。 <a href="flutter_device_information/FlutterDeviceInformation/brand.html">[...]</a>
           <div class="features">read-only</div>
 </dd>
-        <dt id="CPUABI" class="property">
-          <span class="name"><a href="flutter_device_information/FlutterDeviceInformation/CPUABI.html">CPUABI</a></span>
+        <dt id="cpuAbi" class="property">
+          <span class="name"><a href="flutter_device_information/FlutterDeviceInformation/cpuAbi.html">cpuAbi</a></span>
           <span class="signature">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">String</span>&gt;</span></span> 
         </dt>
         <dd>
-          
+          获取的是原生平台的设备指令集名称（CPU的类型）。 <a href="flutter_device_information/FlutterDeviceInformation/cpuAbi.html">[...]</a>
           <div class="features">read-only</div>
 </dd>
         <dt id="model" class="property">
@@ -163,7 +167,7 @@
           <span class="signature">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">String</span>&gt;</span></span> 
         </dt>
         <dd>
-          
+          获取的是原生平台的手机的型号/设备名称。 <a href="flutter_device_information/FlutterDeviceInformation/model.html">[...]</a>
           <div class="features">read-only</div>
 </dd>
         <dt id="platformVersion" class="property">
@@ -171,7 +175,7 @@
           <span class="signature">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">String</span>&gt;</span></span> 
         </dt>
         <dd>
-          
+          获取的是原生平台的系统版本号。 <a href="flutter_device_information/FlutterDeviceInformation/platformVersion.html">[...]</a>
           <div class="features">read-only</div>
 </dd>
         <dt id="sdkInt" class="property">
@@ -179,7 +183,7 @@
           <span class="signature">&#8594; Future<span class="signature">&lt;<wbr><span class="type-parameter">String</span>&gt;</span></span> 
         </dt>
         <dd>
-          
+          获取的是原生平台的API版本（SDKINT）。 <a href="flutter_device_information/FlutterDeviceInformation/sdkInt.html">[...]</a>
           <div class="features">read-only</div>
 </dd>
       </dl>
@@ -210,7 +214,7 @@
       <li class="section-title"><a href="flutter_device_information/FlutterDeviceInformation-class.html#static-properties">Static properties</a></li>
       <li><a href="flutter_device_information/FlutterDeviceInformation/board.html">board</a></li>
       <li><a href="flutter_device_information/FlutterDeviceInformation/brand.html">brand</a></li>
-      <li><a href="flutter_device_information/FlutterDeviceInformation/CPUABI.html">CPUABI</a></li>
+      <li><a href="flutter_device_information/FlutterDeviceInformation/cpuAbi.html">cpuAbi</a></li>
       <li><a href="flutter_device_information/FlutterDeviceInformation/model.html">model</a></li>
       <li><a href="flutter_device_information/FlutterDeviceInformation/platformVersion.html">platformVersion</a></li>
       <li><a href="flutter_device_information/FlutterDeviceInformation/sdkInt.html">sdkInt</a></li>
@@ -223,7 +227,7 @@
 
 <footer>
   <span class="no-break">
-    flutter_device_information 0.0.1
+    flutter_device_information 0.1.0
   </span>
 
 </footer>
