@@ -1,6 +1,6 @@
 name: flutter_device_information
 description: A plugin for using Android devices information in Flutter.You can use it to get Android release version,Android API version,board name,brand name,model name, cpu ABI etc.
-version: 0.1.0
+version: 0.1.1
 author: LZW <lzw460433675@gmail.com>
 homepage: https://github.com/AweiLoveAndroid/flutter_device_information
 
