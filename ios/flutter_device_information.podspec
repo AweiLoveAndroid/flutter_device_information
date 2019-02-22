@@ -4,9 +4,9 @@
 Pod::Spec.new do |s|
   s.name             = 'flutter_device_information'
   s.version          = '0.0.1'
-  s.summary          = 'A new Flutter plugin.'
+  s.summary          = 'A plugin for using Android devices information in Flutter.'
   s.description      = <<-DESC
-A new Flutter plugin.
+A plugin for using Android devices information in Flutter.
                        DESC
   s.homepage         = 'http://example.com'
   s.license          = { :file => '../LICENSE' }

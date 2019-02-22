@@ -38,12 +38,12 @@ class _MyAppState extends State<MyApp> {
 
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
-      platformVersion = await FlutterDeviceInformation.platformVersion;
-      sdkInt = await FlutterDeviceInformation.sdkInt;
-      board = await FlutterDeviceInformation.board;
-      brand = await FlutterDeviceInformation.brand;
+      platformVersion = await FlutterDeviceInformation.platformVersions;
+      sdkInt = await FlutterDeviceInformation.sdkInts;
+      board = await FlutterDeviceInformation.boards;
+      brand = await FlutterDeviceInformation.brands;
       model = await FlutterDeviceInformation.model;
-      cpuAbi = await FlutterDeviceInformation.cpuAbi;
+      cpuAbi = await FlutterDeviceInformation.cpuAbis;
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
       sdkInt = 'Failed to get sdkInt version.';

@@ -1,4 +1,4 @@
-group 'com.awei.flutterdeviceinformation'
+group 'com.awei.flutter_device_information'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -22,7 +22,7 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
 
     defaultConfig {
         minSdkVersion 16

@@ -2,59 +2,57 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 
-/// [FlutterDeviceInformation]通过指定一个[MethodChannel]，然后调用Android平台的相关API，来获取平台设备相关信息的一个类
-///
-/// [FlutterDeviceInformation]这个类里面：定义了一个MethodChannel名称为 "com.awei.devices/flutter_device_information"，用于和原生平台通信。
+/// [FlutterDeviceInformation] use [MethodChannel] and then call the APIs of the Android platform to obtain the platform device related information.
+/// [FlutterDeviceInformation]：define a [MethodChannel] that named "com.awei.devices/flutter_device_information"，used for communication with platform.
 class FlutterDeviceInformation {
-  /// [MethodChannel] 定义的MethodChannel名称为 "com.awei.devices/flutter_device_information"，
-  /// 用于和原生平台通信
+  /// [MethodChannel] that named "com.awei.devices/flutter_device_information"，used for communication with platform.
   static const MethodChannel _channel =
       const MethodChannel('com.awei.devices/flutter_device_information');
 
-  /// 获取的是原生平台的系统版本号。
+  /// Get the platform version of the native platform
   ///
-  /// return [version] 原生平台的系统版本号
-  static Future<String> get platformVersion async {
+  /// return platformVersions
+  static Future<String> get platformVersions async {
     final String version = await _channel.invokeMethod('getPlatformVersion');
     return version;
   }
 
-  /// 获取的是原生平台的API版本（SDKINT）。
+  /// Get the API version(SDKINT) of the native platform
   ///
-  /// return [version] 原生平台的API版本（SDKINT）
-  static Future<String> get sdkInt async {
+  /// return API version(SDKINT)
+  static Future<String> get sdkInts async {
     final String version = await _channel.invokeMethod('getSDKINT');
     return version;
   }
 
-  /// 获取的是原生平台的主板型号。
+  /// Get the board name of the native platform
   ///
-  /// return [version] 原生平台的主板型号
-  static Future<String> get board async {
+  /// return board name
+  static Future<String> get boards async {
     final String version = await _channel.invokeMethod('getBoard');
     return version;
   }
 
-  /// 获取的是原生平台的产品品牌（or系统制造商）。
+  /// Get the API version(SDKINT) of the native platform。
   ///
-  /// return [version] 原生平台的产品品牌（or系统制造商）
-  static Future<String> get brand async {
+  /// return API version(SDKINT)
+  static Future<String> get brands async {
     final String version = await _channel.invokeMethod('getBrand');
     return version;
   }
 
-  /// 获取的是原生平台的手机的型号/设备名称。
+  /// Get the model(Phone model or device name) of the native platform
   ///
-  /// return [version] 原生平台的手机的型号/设备名称
+  /// return model(Phone model or device name)
   static Future<String> get model async {
     final String version = await _channel.invokeMethod('getModel');
     return version;
   }
 
-  /// 获取的是原生平台的设备指令集名称（CPU的类型）。
+  /// Get the CPU ABI(CPU Type) of the native platform
   ///
-  /// return [version] 原生平台的设备指令集名称（CPU的类型）
-  static Future<String> get cpuAbi async {
+  /// return CPU ABI(CPU Type eg.arm64-v8a)
+  static Future<String> get cpuAbis async {
     final String version = await _channel.invokeMethod('getCPUABI');
     return version;
   }
