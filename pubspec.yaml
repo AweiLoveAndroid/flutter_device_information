@@ -6,6 +6,7 @@ homepage: https://github.com/AweiLoveAndroid/flutter_device_information
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
+  flutter: ">=0.1.0 <2.0.0"
 
 dependencies:
   flutter:
